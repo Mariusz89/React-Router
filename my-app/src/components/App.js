@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-	BrowserRouter,
-	Route
-} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import Header from './Header';
 import Home from './Home';
 import About from './About';
@@ -15,14 +12,15 @@ class App extends Component {
       /*'BrowserRouter', the root routing component, that keeps UI in sync with URL.
         'Route' is responsible for rendering a component in app, when the URL matches its path.
         'Exact' instructs the router to render the component only, when the path matches the URL exactly.
+         I can also use example: <Route path="/films" component={Films} />
       */
       <BrowserRouter>
       	<div className="App">
           <Header />
-     			<Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/directors" component={Directors} />
-          <Route path="/films" component={Films} />
+     			<Route exact path="/" render={() => <Home />} />
+          <Route path="/about" render={() => <About title="About"/>} />
+          <Route path="/directors" render={() => <Directors />} />
+          <Route path="/films" render={() => <Films />} />
       	</div>
       </BrowserRouter>
     );

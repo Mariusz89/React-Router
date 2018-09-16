@@ -5,9 +5,9 @@ const Directors = () => {
 	let directors = DirectorList.map((director) => {
 		return(
 			<li className="director" key={director.id}>
+				<img className="director-img" src={director.img_src} alt="director" />
 				<h3>{director.name}</h3>
 				<p>{director.bio}</p>
-				<img className="director-img" src={director.img_src} alt="director" />
 			</li>
 		);
 	});
