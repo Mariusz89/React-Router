@@ -42,6 +42,10 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
+.App {
+  text-align: center;
+}
+
 /* FORM & BUTTON STYLES -------- */
 
 .home a,
@@ -124,7 +128,7 @@ header {
   background: #3b80d1;
 }
 
-/* COURSE NAV -------- */
+/* FILM NAV -------- */
 
 .film-nav li {
   display: inline-block;
@@ -155,7 +159,7 @@ header {
 .icn-logo i {
   font-size: 2.45em;
   line-height: 0;
-  margin-top: 30px;
+  margin-top: 27px;
 }
 .icn-error {
   font-size: 3.2em;
@@ -256,31 +260,5 @@ header {
 }
 
 
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}

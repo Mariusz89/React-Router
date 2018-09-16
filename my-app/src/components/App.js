@@ -12,12 +12,17 @@ import Films from './Films';
 class App extends Component {
   render() {
     return (
+      /*'BrowserRouter', the root routing component, that keeps UI in sync with URL.
+        'Route' is responsible for rendering a component in app, when the URL matches its path.
+        'Exact' instructs the router to render the component only, when the path matches the URL exactly.
+      */
       <BrowserRouter>
       	<div className="App">
-          //Exact instructs the router to render the component only, when the path matches the URL exactly.
+          <Header />
      			<Route exact path="/" component={Home} />
-          
           <Route path="/about" component={About} />
+          <Route path="/directors" component={Directors} />
+          <Route path="/films" component={Films} />
       	</div>
       </BrowserRouter>
     );
