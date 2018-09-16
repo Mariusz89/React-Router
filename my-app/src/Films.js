@@ -5,8 +5,8 @@ const Films = () => (
 		<h2>Films</h2>
 		<ul>
 			<li><a href='/films/thriller'>Thriller</a></li>
-			<li><a href='/films/sci-fi'></a>Sci-Fi</li>
-			<li><a href='/films/horror'></a>Horror</li>
+			<li><a href='/films/sci-fi'>Sci-Fi</a></li>
+			<li><a href='/films/horror'>Horror</a></li>
 		</ul>
 	</div>
 );
