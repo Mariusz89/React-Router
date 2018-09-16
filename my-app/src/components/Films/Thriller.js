@@ -1,9 +1,9 @@
 import React from 'react';
 import Film from './film';
-import {Thriller} from '../../data/films';
+import {ThrillerFilm} from '../../data/films';
 
-const Thriller = (props) => (
-	let films = Horror.map((thriller) {
+const Thriller = (props) => {
+	let films = ThrillerFilm.map((thriller) => {
 		return <Film 
 			key={thriller.id}
 			img={thriller.img_src}
@@ -17,8 +17,8 @@ const Thriller = (props) => (
 			<ul>
 				{films}
 			</ul>
-		/div>
+		</div>
 	);
-);
+};
 
 export default Thriller;

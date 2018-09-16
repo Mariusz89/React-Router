@@ -1,4 +1,4 @@
-export const Thriller = [
+export const ThrillerFilm = [
   {
     title: "Django",
     description: "Łowca nagród Schultz i czarnoskóry niewolnik Django wyruszają w podróż, aby odbić żonę tego drugiego z rąk bezlitosnego Calvina Candie'ego.",
@@ -37,7 +37,7 @@ export const Thriller = [
   }
   ];
   
-export const Sci_Fi =[
+export const Sci_FiFilm =[
     {
       title: "Mroczny Rycerz",
       description: "Batman, z pomocą porucznika Gordona oraz prokuratora Harveya Denta, występuje przeciwko przerażającemu i nieobliczalnemu Jokerowi, który chce pogrążyć Gotham City w chaosie.",
@@ -76,7 +76,7 @@ export const Sci_Fi =[
     }
   ];
   
-export const Horror = [
+export const HorrorFilm = [
   {
     title:"Planeta małp",
     description:"Astronauta trafia na planetę, gdzie władzę sprawują inteligentne małpy. Wkrótce mężczyzna przyłącza się do buntowników walczących o wolność.",
