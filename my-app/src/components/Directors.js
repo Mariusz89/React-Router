@@ -1,21 +1,21 @@
 import React from 'react';
-import DirectorList from '../directors.js';
+import DirectorList from '../data/directors';
 
 const Directors = () => {
 	let directors = DirectorList.map((director) => {
 		return(
-			<li key={director.id}>
+			<li className="director" key={director.id}>
 				<h3>{director.name}</h3>
 				<p>{director.bio}</p>
-				<img src={director.img_src} alt="director" />
+				<img className="director-img" src={director.img_src} alt="director" />
 			</li>
 		);
 	});
 
 	return(
-		<div>
+		<div className="main-content">
 			<h2>Directors</h2>
-			<ul>
+			<ul className="group">
 				{directors}
 			</ul>
 		</div>
