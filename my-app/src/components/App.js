@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header';
+import NotFound from './NotFound';
 import Home from './Home';
 import About from './About';
 import Directors from './Directors';
@@ -18,10 +19,13 @@ class App extends Component {
       <BrowserRouter>
       	<div className="App">
           <Header />
-     			<Route exact path="/" render={() => <Home />} />
-          <Route path="/about" render={() => <About title="About"/>} />
-          <Route path="/directors" render={() => <Directors />} />
-          <Route path="/films" render={() => <Films />} />
+          <Switch>
+     			  <Route exact path="/" render={() => <Home />} />
+            <Route path="/about" render={() => <About title="About"/>} />
+            <Route path="/directors" render={() => <Directors />} />
+            <Route path="/films" render={() => <Films />} />
+            <Route render={() => <NotFound />} />
+          </Switch>
       	</div>
       </BrowserRouter>
     );

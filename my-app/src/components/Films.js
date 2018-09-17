@@ -1,8 +1,8 @@
 import React from "react";
-import { Route, NavLink, Redirect } from 'react-router-dom';
+import { Route, NavLink, Redirect, Switch } from 'react-router-dom';
 import Thriller from './Films/Thriller';
 import Horror from './Films/Horror';
-import Sci_Fi from './Films/Sci_Fi';
+import SciFi from './Films/Sci_Fi';
 
 //Component NavLink gives active links a default class of active.
 const Films = () => (
@@ -17,7 +17,7 @@ const Films = () => (
 		</div>
 		<Route path="/films" render={() => <Redirect to="/films/thriller" />} />
      	<Route exact path="/films/thriller" render={() => <Thriller />} />
-        <Route path="/films/sci_fi" render={() => <Sci_Fi />} />
+        <Route path="/films/sci_fi" render={() => <SciFi />} />
         <Route path="/films/horror" render={() => <Horror />} />  
 	</div>
 );
