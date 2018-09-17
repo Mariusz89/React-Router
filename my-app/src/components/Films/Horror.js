@@ -1,6 +1,7 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import Film from './film';
-import {HorrorFilm} from '../../data/films';
+import { HorrorFilm } from '../../data/films';
 
 const Horror = (props) => {
 	let films = HorrorFilm.map((horror) => {

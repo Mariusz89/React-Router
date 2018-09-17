@@ -5,9 +5,6 @@ import Home from './Home';
 import About from './About';
 import Directors from './Directors';
 import Films from './Films';
-import Thriller from './Films/Thriller';
-import Horror from './Films/Horror';
-import Sci_Fi from './Films/Sci_Fi';
 
 
 class App extends Component {
