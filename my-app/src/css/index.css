@@ -42,10 +42,6 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-.App {
-  text-align: center;
-}
-
 /* FORM & BUTTON STYLES -------- */
 
 .home a,
@@ -101,7 +97,8 @@ header {
 /* IMAGES -------- */
 
 .film-img {
-  width: 70px;
+  width: 80px;
+  height: 80px;
 }
 .director-img {
   width: 100%;

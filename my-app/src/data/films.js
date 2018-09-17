@@ -80,7 +80,7 @@ export const HorrorFilm = [
   {
     title:"Planeta małp",
     description:"Astronauta trafia na planetę, gdzie władzę sprawują inteligentne małpy. Wkrótce mężczyzna przyłącza się do buntowników walczących o wolność.",
-    img_src:"",
+    img_src:"http://www.tapety.na-pulpit.pl/wp-content/uploads/2014/03/tapety_ewolucja_planety_malp_dawn-of-the-planet-of-the-apes_20141.jpg",
     id: "horror-1"
   },
   {
