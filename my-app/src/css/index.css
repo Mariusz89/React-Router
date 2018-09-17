@@ -93,6 +93,7 @@ header {
 .film-img {
   width: 80px;
   height: 80px;
+  border-radius: 5px;
 }
 .director-img {
   width: 100%;
