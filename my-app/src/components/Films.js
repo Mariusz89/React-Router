@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, Redirect } from 'react-router-dom';
 import Thriller from './Films/Thriller';
 import Horror from './Films/Horror';
 import Sci_Fi from './Films/Sci_Fi';
@@ -15,6 +15,7 @@ const Films = () => (
 				<li><NavLink to='/films/horror'>Horror</NavLink></li>
 			</ul>
 		</div>
+		<Route path="/films" render={() => <Redirect to="/films/thriller" />} />
      	<Route exact path="/films/thriller" render={() => <Thriller />} />
         <Route path="/films/sci_fi" render={() => <Sci_Fi />} />
         <Route path="/films/horror" render={() => <Horror />} />  
