@@ -15,15 +15,16 @@ class App extends Component {
         'Route' is responsible for rendering a component in app, when the URL matches its path.
         'Exact' instructs the router to render the component only, when the path matches the URL exactly.
          I can also use example: <Route path="/films" component={Films} />
+         'Switch' renders the first child Route or Redirect that matches the location.
       */
       <BrowserRouter>
       	<div className="App">
           <Header />
           <Switch>
      			  <Route exact path="/" render={() => <Home />} />
-            <Route path="/about" render={() => <About title="About"/>} />
+            <Route path="/about" render={() => <About title="About" />} />
             <Route path="/directors" render={() => <Directors />} />
-            <Route path="/films" render={() => <Films />} />
+            <Route path="/films" component={Films} />
             <Route render={() => <NotFound />} />
           </Switch>
       	</div>
