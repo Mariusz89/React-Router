@@ -21,7 +21,7 @@ class App extends Component {
       	<div className="App">
           <Header />
           <Switch>
-     			  <Route path="/" render={() => <Home />} />
+     			  <Route exact path="/" render={() => <Home />} />
             <Route path="/about" render={() => <About title="About" />} />
             <Route path="/directors" render={() => <Directors />} />
             <Route path="/films" component={Films} />
